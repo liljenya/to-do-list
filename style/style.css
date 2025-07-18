@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #E5E7EB;
+    padding: 30px;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    background-color: #F3F4F6;
+    width: 280px;
+    border-radius: 15px;
+    padding: 30px 20px;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.menu h2 {
+    color: #1F2937;
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.add-project {
+    padding: 12px 20px;
+    border-radius: 10px;
+    background-color: #E5E7EB;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+
+.add-project:hover {
+    background-color: #d1d5db;
+}
+
+.main-content {
+    flex: 1;
+    background-color: #F9FAFB;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.main-content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.project-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #111827;
+}
+
+.add-todo {
+    padding: 12px 20px;
+    border-radius: 10px;
+    background-color: #E5E7EB;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+
+.add-todo:hover {
+    background-color: #d1d5db;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    min-width: 300px;
+}
+
+.todo-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.todo-form input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.todo-form button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background-color: #e5e7eb;
+}
+
+.todo-form button:hover {
+    background-color: #d1d5db;
+}
+
+.todo-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.todo-item strong {
+    font-size: 26px;
+}
+
+.todo-item p {
+    font-size: 20px;
+}
