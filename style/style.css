@@ -119,7 +119,8 @@ body {
     border: 1px solid #ccc;
 }
 
-.todo-form button {
+.todo-form button,
+.delete-button {
     padding: 10px;
     font-size: 16px;
     border-radius: 8px;
@@ -136,6 +137,11 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: #fff;
 }
 
 .todo-item strong {
@@ -144,4 +150,19 @@ body {
 
 .todo-item p {
     font-size: 20px;
+}
+
+.project-list {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: #f9f9f9;
+}
+
+.project-select-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 10px 0;
 }
